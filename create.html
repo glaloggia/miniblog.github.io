@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.1/sql-wasm.js"></script>
+    <script src="create-post.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Create Post</h1>
+            <div class="burger-menu" id="burgerMenu">
+                ☰
+            </div>
+        </header>
+        <nav id="navDrawer" class="nav-drawer">
+            <a href="javascript:void(0)" class="closebtn" id="closeBtn">&times;</a>
+            <a href="index.html">Home</a>
+        </nav>
+        <form id="postForm">
+            <input type="text" id="title" placeholder="Title" required>
+            <textarea id="content" rows="10" placeholder="Content" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

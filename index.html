@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.1/sql-wasm.js"></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mini Blog</h1>
+            <div class="burger-menu" id="burgerMenu">
+                ☰
+            </div>
+        </header>
+        <nav id="navDrawer" class="nav-drawer">
+            <a href="javascript:void(0)" class="closebtn" id="closeBtn">&times;</a>
+            <a href="create.html">Create New Post</a>
+            <a href="javascript:void(0)" id="resetLocalStorage">Reset Blog</a>
+            <a href="javascript:void(0)" id="exportPosts">Export Posts</a>
+            <a href="javascript:void(0)" id="importPostsBtn">Import Posts</a> <!-- Import button -->
+            <input type="file" id="importPostsFile" style="display: none;" accept=".json">
+        </nav>
+        <div id="posts">
+            <!-- Posts will be displayed here -->
+        </div>
+    </div>
+</body>
+</html>

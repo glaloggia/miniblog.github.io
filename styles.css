@@ -1,0 +1,91 @@
+/* styles.css */
+body {
+    background-color: black;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding: 20px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1 {
+    margin: 0;
+}
+.burger-menu {
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+.nav-drawer {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.nav-drawer a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.nav-drawer a:hover {
+    background-color: #575757;
+}
+.nav-drawer .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-family: "Courier New", Courier, monospace;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+}
+button {
+    padding: 10px;
+    font-family: "Courier New", Courier, monospace;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.home-link, .create-post-link {
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+    text-decoration: none;
+}
+.post {
+    border-bottom: 1px solid white;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.post h2 {
+    margin: 0 0 10px;
+}
+.post p {
+    margin: 0 0 10px;
+}
